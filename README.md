@@ -2,13 +2,16 @@
 This repository contains SQL code for creating and managing a Library Management System database. The database includes tables for branches, employees, customers, books, issued books status, and returned books status.
 
 ## Tables
-Tables
-Branch:
+1. Branch:
 
 Branch_no: Unique branch number.
+
 Manager_Id: Unique manager ID.
+
 Branch_address: Address of the branch.
+
 Contact_no: Contact number of the branch.
+
 Employee:
 
 Emp_Id: Unique employee ID.

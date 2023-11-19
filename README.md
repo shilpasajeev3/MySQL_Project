@@ -4,13 +4,13 @@ This repository contains SQL code for creating and managing a Library Management
 ## Tables
 1. Branch:
 
-Branch_no: Unique branch number.
+   Branch_no: Unique branch number.
 
-Manager_Id: Unique manager ID.
+   Manager_Id: Unique manager ID.
 
-Branch_address: Address of the branch.
+   Branch_address: Address of the branch.
 
-Contact_no: Contact number of the branch.
+   Contact_no: Contact number of the branch.
 
 Employee:
 

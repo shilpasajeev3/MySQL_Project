@@ -2,49 +2,42 @@
 This repository contains SQL code for creating and managing a Library Management System database. The database includes tables for branches, employees, customers, books, issued books status, and returned books status.
 
 ## Tables
-1. Branch:
+### Branch
+Information about library branches, including branch number, manager ID, address, and contact number.
+### Employee
+Details about employees, such as employee ID, name, position, salary, and the branch they belong to.
+### Customer
+Customer-related information, including customer ID, name, address, and registration date.
+### Books
+Book details, covering ISBN, title, category, rental price, availability status, author, and publisher.
+### IssueStatus
+Records of books issued, including issue ID, customer ID, issued book name, issue date, and corresponding book ISBN.
+### ReturnStatus
+Records of returned books, containing return ID, customer ID, returned book name, return date, and corresponding book ISBN.
 
-   Branch_no: Unique branch number.
+## SQL Queries
+Explore the power of SQL queries to extract valuable insights from the Library Management System database. Below are key queries offering diverse functionalities:
+### Available Books Details:
+Retrieve titles, categories, and rental prices of all currently available books for rental.
+### Employee Salaries:
+List employee names and salaries in descending order of their salary.
+### Issued Books and Customers:
+Get titles of books issued along with corresponding customer names.
+### Total Book Count by Category:
+Display the total count of books in each category.
+### High-Salaried Employees:
+Retrieve names and positions of employees with salaries above Rs. 50,000.
+### Inactive Customers:
+List customer names registered before January 2022 who have not issued any books yet.
+### Branch Employee Count:
+Display branch numbers and the total count of employees in each branch, considering managers.
+### June 2023 Issuers:
+Identify customer names who issued books in June 2023.
+### History Category Books:
+Retrieve book titles from the 'History' category.
+### Branches with More Employees:
+Find branch numbers and their employee counts for branches with more than 5 employees.
+## Conclusion
+In conclusion, this Library Management System database project offers a comprehensive set of SQL queries and tables for effective management of library operations. Whether you're building a new system or enhancing an existing one, these queries provide valuable insights into book availability, employee details, and customer interactions. 
 
-   Manager_Id: Unique manager ID.
-
-   Branch_address: Address of the branch.
-
-   Contact_no: Contact number of the branch.
-
-Employee:
-
-Emp_Id: Unique employee ID.
-Emp_name: Name of the employee.
-Position: Job position of the employee.
-Salary: Salary of the employee.
-B_no: Foreign key referencing Branch_no from the Branch table.
-Customer:
-
-Customer_Id: Unique customer ID.
-Customer_name: Name of the customer.
-Customer_address: Address of the customer.
-Reg_date: Registration date of the customer.
-Books:
-
-ISBN: Unique book ISBN.
-Book_title: Title of the book.
-Category: Category of the book.
-Rental_Price: Rental price of the book.
-Status: Availability status of the book.
-Author: Author of the book.
-Publisher: Publisher of the book.
-IssueStatus:
-
-Issue_Id: Unique issue ID.
-Issued_cust: Foreign key referencing Customer_Id from the Customer table.
-Issued_book_name: Name of the issued book.
-Issue_date: Date of issuing the book.
-Isbn_book: Foreign key referencing ISBN from the Books table.
-ReturnStatus:
-
-Return_Id: Unique return ID.
-Return_cust: Customer returning the book.
-Return_book_name: Name of the returned book.
-Return_date: Date of returning the book.
-Isbn_book2: Foreign key referencing ISBN from the Books table.
+Remember to customize the code to fit your database environment and specific project requirements. It's important to note that this is a foundational example, and real-world applications may necessitate additional features and security measures. Feel free to use, adapt, and contribute to this project, making it a valuable resource for the library management community. Happy coding!
